@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restablecer Contraseña</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            color: #bdc3d2;
+            font-family: Arial, sans-serif;
+            background-color: #13161d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 16px;
+        }
+
+        .reset-container {
+            background-color: #1C2029;
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 24px;
+            font-size: 1.4rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            font-size: 0.95rem;
+        }
+
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 16px;
+            border: 1px solid #555;
+            border-radius: 6px;
+            background-color: #252a34;
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        input::placeholder {
+            color: #aaa;
+        }
+
+        label.confirm-password {
+            margin-top: 10px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 14px;
+            background-color: #929cb6;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+            button:hover {
+                background-color: #767e93;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="reset-container">
+        <h2>Restablecer Contraseña</h2>
+        <form id="reset-form">
+            <label for="new-password">Nueva contraseña</label>
+            <input type="password" id="new-password" name="Password" required placeholder="Ingrese una nueva contraseña">
+
+            <label for="confirm-password">Confirmar contraseña</label>
+            <input type="password" id="confirm-password" name="RepeatPassword" required placeholder="Repita la contraseña">
+
+            <button type="submit">Restablecer Contraseña</button>
+        </form>
+    </div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const token = params.get('token');
+        const email = params.get('email');
+        console.log(email);
+
+        document.addEventListener('DOMContentLoaded', function () {
+            console.log('1. DOM cargado correctamente');
+
+            const form = document.getElementById('reset-form');
+            if (form) {
+                console.log('2. Formulario encontrado');
+
+                form.addEventListener('submit', function (e) {
+                    console.log('3. Evento submit capturado');
+                    e.preventDefault();
+
+                    const password = document.getElementById("new-password").value;
+                    const repeatPassword = document.getElementById("confirm-password").value;
+
+                    if (password !== repeatPassword) {
+                        console.log(password, repeatPassword);
+                        alert('Las contraseñas no coinciden');
+                        return;
+                    }
+
+                    try {
+                        console.log(token);
+                        console.log('4. Enviando petición al servidor...');
+                        fetch('/password/reset', {
+                            method: 'POST',
+                            headers: {
+                                "Content-Type": "application/json",
+                                "Authorization": "Bearer " + token
+                            },
+                            body: JSON.stringify({
+                                Email: email,
+                                Password: password
+                            })
+                        })
+                            .then(response => {
+                                console.log('5. Respuesta recibida del servidor');
+                                if (!response.ok) {
+                                    throw new Error('Error en el servidor');
+                                }
+                                return response.json();
+                            })
+                            .then(data => {
+                                console.log('6. Contraseña restablecida exitosamente');
+                                alert("Password reset correctly");
+                                form.reset();
+                            })
+                            .catch(error => {
+                                console.error('Error:', error);
+                                alert('Hubo un problema al restablecer la contraseña');
+                            });
+                    } catch (error) {
+                        console.error('Error al enviar la petición:', error);
+                        alert('Error de conexión con el servidor');
+                    }
+                });
+            } else {
+                console.error('2. Error: No se encontró el formulario');
+            }
+        });
+    </script>
+</body>
+</html>

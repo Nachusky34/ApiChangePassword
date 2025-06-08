@@ -1,0 +1,228 @@
+{
+  "Version": 1,
+  "Hash": "AWrym27vWgrUNw48oiBd5i2e5PkezgmaOUeUIZ6YhII=",
+  "Source": "ApiCambioContraseña",
+  "BasePath": "_content/ApiCambioContraseña",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ApiCambioContraseña\\wwwroot",
+      "Source": "ApiCambioContraseña",
+      "ContentRoot": "C:\\Users\\usuario\\source\\repos\\ApiCambioContraseña\\ApiCambioContraseña\\wwwroot\\",
+      "BasePath": "_content/ApiCambioContraseña",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\usuario\\source\\repos\\ApiCambioContraseña\\ApiCambioContraseña\\wwwroot\\assets\\ic_logo.png",
+      "SourceId": "ApiCambioContraseña",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\usuario\\source\\repos\\ApiCambioContraseña\\ApiCambioContraseña\\wwwroot\\",
+      "BasePath": "_content/ApiCambioContraseña",
+      "RelativePath": "assets/ic_logo#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8y5zebqrse",
+      "Integrity": "IL2OlP4AJ3Ke4fbPUC7qkBxLyY48H3rL/4d5EbVTOnM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\ic_logo.png"
+    },
+    {
+      "Identity": "C:\\Users\\usuario\\source\\repos\\ApiCambioContraseña\\ApiCambioContraseña\\wwwroot\\index.html",
+      "SourceId": "ApiCambioContraseña",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\usuario\\source\\repos\\ApiCambioContraseña\\ApiCambioContraseña\\wwwroot\\",
+      "BasePath": "_content/ApiCambioContraseña",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jdd9j8j86h",
+      "Integrity": "CRFDL0+zt6TIB6YTKbBq8JnAhQKjtw6VsdJRxeGKATY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "assets/ic_logo.8y5zebqrse.png",
+      "AssetFile": "C:\\Users\\usuario\\source\\repos\\ApiCambioContraseña\\ApiCambioContraseña\\wwwroot\\assets\\ic_logo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "97117"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IL2OlP4AJ3Ke4fbPUC7qkBxLyY48H3rL/4d5EbVTOnM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 16:12:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8y5zebqrse"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/ic_logo.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IL2OlP4AJ3Ke4fbPUC7qkBxLyY48H3rL/4d5EbVTOnM="
+        }
+      ]
+    },
+    {
+      "Route": "assets/ic_logo.png",
+      "AssetFile": "C:\\Users\\usuario\\source\\repos\\ApiCambioContraseña\\ApiCambioContraseña\\wwwroot\\assets\\ic_logo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "97117"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IL2OlP4AJ3Ke4fbPUC7qkBxLyY48H3rL/4d5EbVTOnM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 May 2025 16:12:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IL2OlP4AJ3Ke4fbPUC7qkBxLyY48H3rL/4d5EbVTOnM="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\usuario\\source\\repos\\ApiCambioContraseña\\ApiCambioContraseña\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5709"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CRFDL0+zt6TIB6YTKbBq8JnAhQKjtw6VsdJRxeGKATY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 18:40:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CRFDL0+zt6TIB6YTKbBq8JnAhQKjtw6VsdJRxeGKATY="
+        }
+      ]
+    },
+    {
+      "Route": "index.jdd9j8j86h.html",
+      "AssetFile": "C:\\Users\\usuario\\source\\repos\\ApiCambioContraseña\\ApiCambioContraseña\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5709"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CRFDL0+zt6TIB6YTKbBq8JnAhQKjtw6VsdJRxeGKATY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 18:40:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jdd9j8j86h"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CRFDL0+zt6TIB6YTKbBq8JnAhQKjtw6VsdJRxeGKATY="
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+wwwroot\assets\ic_logo.png
+wwwroot\index.html

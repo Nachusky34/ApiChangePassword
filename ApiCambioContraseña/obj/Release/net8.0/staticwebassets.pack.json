@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\usuario\\source\\repos\\ApiCambioContraseña\\ApiCambioContraseña\\wwwroot\\assets\\ic_logo.png",
+      "PackagePath": "staticwebassets\\assets\\ic_logo.png"
+    },
+    {
+      "Id": "C:\\Users\\usuario\\source\\repos\\ApiCambioContraseña\\ApiCambioContraseña\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.ApiCambioContraseña.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.ApiCambioContraseña.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.ApiCambioContraseña.props",
+      "PackagePath": "build\\ApiCambioContraseña.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ApiCambioContraseña.props",
+      "PackagePath": "buildMultiTargeting\\ApiCambioContraseña.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.ApiCambioContraseña.props",
+      "PackagePath": "buildTransitive\\ApiCambioContraseña.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

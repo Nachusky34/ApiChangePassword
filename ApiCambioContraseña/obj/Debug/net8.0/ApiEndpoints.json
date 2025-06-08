@@ -1,0 +1,50 @@
+[
+  {
+    "ContainingType": "ApiCambioContrase\u00F1a.PasswordResetController",
+    "Method": "SendLink",
+    "RelativePath": "password/link-email",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiCambioContrase\u00F1a.PasswordResetController",
+    "Method": "SendLinkSms",
+    "RelativePath": "password/link-sms",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "number",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiCambioContrase\u00F1a.PasswordResetController",
+    "Method": "ResetPassword",
+    "RelativePath": "password/reset",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "param",
+        "Type": "ApiCambioContrase\u00F1a.ResetPasswordRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
